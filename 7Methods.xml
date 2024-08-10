@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="bookFlightMission">
+	  <groups>
+		  <define name="Wolf">
+			  <include name="Sanity"/>
+			  <include name="Smoke"></include>
+		  </define>
+		  <define name="Dog">
+			  <include name="Regression"></include>
+			  <include name="UAT"></include>
+		  </define>
+		  <run>
+			<include name="all"></include>
+			
+		  </run>
+	  </groups>
+    <classes>
+      <class name="vijay2.wolf2"/>
+    </classes>
+  </test> <!-- bookFlightMission -->
+</suite> <!-- Suite -->

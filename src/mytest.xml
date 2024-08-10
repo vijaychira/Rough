@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="DemoSuite">
+  <test name="searchtest">
+    <classes>
+      <class name="vijay.Testclass">
+      <methods>
+		  <include name="TestGoogle"/>
+			<include name="TestOrkut"/>  
+	  </methods>
+	  </class>
+		 <class name="vijay.wolf">
+		 <methods>
+			 <include name="TestGoogle"/>
+		 </methods>
+		 </class>
+    </classes>
+  </test>
+</suite> 
